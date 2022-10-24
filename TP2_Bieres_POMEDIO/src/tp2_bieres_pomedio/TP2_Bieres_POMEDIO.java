@@ -14,20 +14,21 @@ public class TP2_Bieres_POMEDIO {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-     BouteilleBiere uneBiere = new BouteilleBiere() ;
- uneBiere.nom = "Cuvée des trolls";
- uneBiere.degreAlcool = 7.0 ;  
- uneBiere.brasserie="Dubuisson";
- uneBiere.ouverte=false;
-  uneBiere.lireEtiquette(); 
-  
 
-uneBiere.nom = "Leffe";
- uneBiere.degreAlcool = 6.6 ;  
- uneBiere.brasserie="Abbaye de Leffe";
- uneBiere.ouverte=false;
-  uneBiere.lireEtiquette();
- 
+        
+    BouteilleBiere autreBiere = new BouteilleBiere("Leffe", 6.6,"Abbaye de Leffe") ;
+    BouteilleBiere Despe = new BouteilleBiere("Despe", 6.0,"Desperado") ;
+    BouteilleBiere biere = new BouteilleBiere("1664", 7.0,"777") ;
+    
+    autreBiere.Décapsuler();
+    Despe.Décapsuler();
+    biere.Décapsuler();
+    
+    
+    System.out.println(autreBiere) ;
+    System.out.println(Despe) ;
+    System.out.println(biere) ;
+
     }
 }
 
