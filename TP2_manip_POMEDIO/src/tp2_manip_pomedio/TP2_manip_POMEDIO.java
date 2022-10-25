@@ -24,6 +24,23 @@ public class TP2_manip_POMEDIO {
         System.out.println("nb de calories de Assiette 2 : " + assiette2.nbCalories) ;//affichage
         System.out.println("nb de calories de Assiette 3 : " + assiette3.nbCalories) ; 
 
-}
+
+        assiette2=assiette1;
+        assiette1=assiette3;
     
+        System.out.println("nb de calories de Assiette 2 : " + assiette2.nbCalories) ;
+        System.out.println("nb de calories de Assiette 1 : " + assiette1.nbCalories) ;
+        
+    //q6)la première ligne Moussaka assiette666 est fausse
+    //la deuxième ligne Moussaka assiette667 est fausse
+    //la référence de l'objet tartiflette ne peut pas référencer l'objet moussaka
+    
+    Moussaka tab[]=new Moussaka[10];//tableau de 10 cases
+    for (int i=0;i<10;i++){//chaque case prend une moussaka
+        tab[i]=new Moussaka(500);//on associe a chaque case de moussaka un nbr de calories, l'opération se répète 10 fois
+        
+     System.out.println(tab[0].nbCalories);
+    }
+     
+    }   
 }
