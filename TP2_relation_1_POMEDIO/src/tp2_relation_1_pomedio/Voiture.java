@@ -12,15 +12,18 @@ public class Voiture {
     String Modele;
     String Marque;
     int PuissanceCV;
-    
-    public Voiture(String modele, String marque, int CV){
+    Personne Proprietaire;
+    public Voiture(String modele, String marque, int CV){//caracteristique de la voiture
         Modele=modele;
         Marque=marque;
         PuissanceCV=CV;
+        Proprietaire=null;
     }
     @Override
 public String toString () {
-    
+String descrp_voiture;
+descrp_voiture="Modele:"+Modele+",Marque"+Marque+",Puissance"+PuissanceCV+"CV";
+return descrp_voiture;
 }
   
 }
