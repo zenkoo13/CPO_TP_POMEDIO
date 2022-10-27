@@ -38,7 +38,7 @@ public class TP2_relation_1_POMEDIO {
         
         uneAutreClio.Proprietaire= reno;
         reno.nbrVoitures+=1;
-        reno.liste_voitures[reno.nbVoitures-1]= uneAutreClio;
+        reno.liste_voitures[reno.nbrVoitures-1]= uneAutreClio;
         
         
         System.out.println(bob.ajouter_voiture(une2008)); 

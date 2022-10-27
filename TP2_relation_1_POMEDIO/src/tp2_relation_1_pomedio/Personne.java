@@ -21,7 +21,7 @@ public class Personne {
         liste_voitures= new Voiture[3];
     }
     public boolean ajouter_voiture( Voiture voiture_a_ajouter) {
-        if (voiture_a_ajouter.Proprietaire=null){
+        if (voiture_a_ajouter.Proprietaire!=null){
             System.out.println("Erreur, la voiture est volee");
             return false;           
         }
@@ -33,6 +33,7 @@ public class Personne {
             int caseTableau=nbrVoitures; 
             nbrVoitures+=1;
             voiture_a_ajouter.Proprietaire=this; 
+            this.liste_voitures[caseTableau]=voiture_a_ajouter;
             return true;
             
         }
