@@ -15,6 +15,20 @@ public class TP3_Héritage_POMEDIO {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Epee excalibur = new Epee ("Excalibur", 7, 5);
+        Epee durandal = new Epee ("Durandal", 4, 7);
+        
+        Baton chene = new Baton ("Chêne", 4, 5);
+        Baton charme = new Baton ("Charme", 5, 6);
+        
+        System.out.println(excalibur);
+        System.out.println(durandal);
+        
+       
+        
+        System.out.println(chene);
+        System.out.println(charme);
+       
     }
     
 }
