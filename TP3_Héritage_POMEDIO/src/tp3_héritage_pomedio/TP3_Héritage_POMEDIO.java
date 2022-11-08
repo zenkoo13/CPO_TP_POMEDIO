@@ -4,6 +4,11 @@
  */
 package tp3_héritage_pomedio;
 
+import Armes.Arme;
+import Armes.Epee;
+import Armes.Baton;
+import java.util.ArrayList;
+
 /**
  *
  * @author kenzopomedio
@@ -28,6 +33,18 @@ public class TP3_Héritage_POMEDIO {
         
         System.out.println(chene);
         System.out.println(charme);
+        
+        ArrayList<Arme> tab = new  ArrayList<Arme>();
+        tab.add(excalibur);
+        tab.add(durandal);
+        tab.add(chene);
+        tab.add(charme);
+        
+        System.out.print(tab.get(0));
+        System.out.print(tab.get(1));
+        System.out.print(tab.get(2));
+        System.out.print(tab.get(3));
+                
        
     }
     
