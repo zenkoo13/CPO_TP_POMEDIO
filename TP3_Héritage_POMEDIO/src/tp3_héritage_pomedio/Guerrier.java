@@ -14,7 +14,7 @@ public class Guerrier extends Personnage {
     public Guerrier(String unNom, int unNiv_vie, String unCheval){
         
         super(unNom, unNiv_vie);
-        if(unCheval=="à cheval"){
+        if(unCheval == "à cheval"){
             cheval=true;
         }else{
             cheval=false;
