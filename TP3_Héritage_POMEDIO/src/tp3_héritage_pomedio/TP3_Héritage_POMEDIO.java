@@ -46,6 +46,38 @@ public class TP3_Héritage_POMEDIO {
         System.out.print(tab.get(3));
                 
        
-    }
     
+    Magicien Gandalf= new Magicien("Gandalf",65, "confirme");
+    Magicien Garcimore= new Magicien("Garcimore", 44, "novice");
+    
+    Guerrier Conan= new Guerrier("Conan", 78, "à pied");
+    Guerrier Lannister= new Guerrier("Lannister", 45, "à cheval");
+    
+    System.out.println(Gandalf);
+    System.out.println(Garcimore);
+    
+    System.out.println(Conan);
+    System.out.println(Lannister);
+    
+    
+    
+    ArrayList<Personnage> tab1 = new  ArrayList<Personnage>();
+    tab1.add(Gandalf);
+    tab1.add(Garcimore);
+    tab1.add(Conan);
+    tab1.add(Lannister);
+    
+    System.out.print(tab1.get(0));
+    System.out.print(tab1.get(1));
+    System.out.print(tab1.get(2));
+    System.out.print(tab1.get(3));
+    
+    }
 }
+    
+    
+    
+    
+    
+
+
