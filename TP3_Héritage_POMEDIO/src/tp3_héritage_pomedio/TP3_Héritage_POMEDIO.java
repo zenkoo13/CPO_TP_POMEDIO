@@ -4,6 +4,9 @@
  */
 package tp3_héritage_pomedio;
 
+import Personnage.Personnage;
+import Personnage.Magicien;
+import Personnage.Guerrier;
 import Armes.Arme;
 import Armes.Epee;
 import Armes.Baton;
@@ -40,6 +43,9 @@ public class TP3_Héritage_POMEDIO {
         tab.add(chene);
         tab.add(charme);
         
+         for (int i=0; i<4;i++){
+            System.out.print(tab.get(i));
+        
         System.out.print(tab.get(0));
         System.out.print(tab.get(1));
         System.out.print(tab.get(2));
@@ -67,13 +73,46 @@ public class TP3_Héritage_POMEDIO {
     tab1.add(Conan);
     tab1.add(Lannister);
     
+    for (int j=0; i<4;i++){
+            System.out.print(tab1.get(i));
+        }
+    
     System.out.print(tab1.get(0));
     System.out.print(tab1.get(1));
     System.out.print(tab1.get(2));
     System.out.print(tab1.get(3));
     
     }
+         
+        Magicien Kader = new Magicien ("Kader bueno", 68, "confirme");
+        Guerrier Cyborg = new Guerrier("Erling Haaland",100,"à cheval");
+       
+        Epee Saphir  = new Epee ("Saphir", 49, 56);
+        Epee Rubi = new Epee ("Rubi", 77, 41);
+        Epee Emeraude = new Epee ("Emeraude", 88, 18);
+       
+        Baton Diamant = new Baton("Diamant",67,4);
+        Baton Platine = new Baton ("Platine", 90, 7);
+        Baton Cristal = new Baton ("Cristal", 24, 8);
+       
+       Cyborg.ajouterArme(Emeraude);
+       Cyborg.ajouterArme(Platine);
+       Cyborg.ajouterArme(Cristal);
+       Cyborg.EquipArme("Emeraude");
+       
+       Kader.ajouterArme(Rubi);
+       Kader.ajouterArme(Diamant);
+       Kader.ajouterArme(Saphir);
+       Kader.EquipArme("Saphir");
+       
+       System.out.println(Cyborg);
+       System.out.println(Kader);
+     
+       
+    }
 }
+
+
     
     
     
