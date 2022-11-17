@@ -32,6 +32,10 @@ public class Arme {
     
         return chaine_a_retourner ;
     }
+
+    public Object getNom() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
     
 }
